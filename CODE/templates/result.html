@@ -1,0 +1,80 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link rel="icon" href="../../../../favicon.ico">
+
+
+    <title>BREAST CANCER PREDICTION </title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="{{url_for('static', filename = 'css/bootstrap.min.css')}}" rel="stylesheet">
+
+    <!-- Custom styles for this template -->
+    <link href="{{url_for('static', filename = 'css/cover.css')}}" rel="stylesheet">
+  </head>
+
+<style type="text/css">
+  body{
+    background-image: url('static/img/new/blue.jpg');
+    background-repeat: no_repeat; 
+    background-size: cover;
+  }
+
+</style>
+
+
+  <body class="text-center" >
+<body class="text-center" data-spy="scroll" data-target=".navbar" data-offset="60">
+    <div class="cover-container d-flex h-100 p-3 mx-auto flex-column">
+      <header class="masthead mb-auto">
+        <div class="inner">
+          <h3 class="masthead-brand"> CANCER PREDICTION  </h3>    
+         <nav class="nav nav-masthead justify-content-center">
+            <a class="nav-link active" href="{{url_for('index')}}"> Home </a>
+            <a class="nav-link active" href="#"> Features </a>
+             <a class="nav-link active" href="{{url_for('contact')}}"> contact</a>
+          </nav>
+        </div>
+      </header>
+
+      <main role="main" class="inner cover">
+        
+        
+                         <div class="home-info">
+                              <h1 style="color:green">Result of the prediction</h1>
+                                   {%if prediction < 10%}
+                                   <h1 style="color:red;"><p> is : {{prediction}}%</p></h1>
+                                   {%elif prediction >= 30%}
+                                   <h1 style="color:green;"><p> is : {{prediction}}%</p></h1>
+                                    
+                                   {% endif %}
+
+                <br>
+                <br>
+                <p class="lead">
+          <a href="{{url_for('parkForm')}}" class="btn btn-lg btn-secondary">Previous</a>
+        </p>
+            </div>
+        
+      </main>
+
+      <footer class="mastfoot mt-auto">
+        <div class="inner">
+        </div>
+      </footer>
+    </div>
+
+
+    <!-- Bootstrap core JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <!--<script>window.jQuery || document.write('<script src="{{url_for('static', filename = 'js/jquery-slim.min.js')}}"><\/script>')</script> -->
+    <script src="{{url_for('static', filename = 'js/popper.min.js')}}"></script>
+    <script src="{{url_for('static', filename = 'js/bootstrap.min.js')}}"></script>
+  </body>
+</html>

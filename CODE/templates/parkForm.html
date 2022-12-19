@@ -1,0 +1,179 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link rel="icon" href="../../../../favicon.ico">
+    
+
+    <title>    </title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="{{url_for('static', filename = 'css/bootstrap.min.css')}}" rel="stylesheet">
+
+    <!-- Custom styles for this template -->
+    <link href="{{url_for('static', filename = 'css/cover.css')}}" rel="stylesheet">
+  </head>
+
+<style type="text/css">
+  body{
+    background-image: url('static/img/new/Allofthem.png');
+    background-repeat: no-repeat; 
+    background-size: cover;
+  }
+
+</style>
+  <body class="text-center" data-spy="scroll" data-target=".navbar" data-offset="60">
+    <div class="cover-container d-flex h-100 p-3 mx-auto flex-column">
+      <header class="masthead mb-auto">
+        <div class="inner">
+          <h3 style="color:white; text-align: center;">  SECURED CENSUS INFORMATION MANAGEMENT SYSTEM </h3>
+          <nav class="nav nav-masthead justify-content-center">
+            <a class="nav-link active" href="{{url_for('index')}}">Home</a>
+            <a class="nav-link active" href="#">Features</a>
+             <a class="nav-link active" href="{{url_for('contact')}}">contact</a>
+             <a class="nav-link active" href="{{url_for('men')}}">submit</a>
+             <br>
+             
+          </nav>
+        </div>
+      </header>
+      <div>
+    </div>
+    <div class="container">
+          
+      <form action = "{{url_for('parkPredict')}}" method="POST" class="align-items-center justify-content-center">
+       <div >
+            <h4 style="color:white; text-align: center;"> PLEASE CHECK ALL THAT APPLIES </h4>
+          </div>
+          <br>
+            <br>       
+          <form>
+            <br>
+
+<div class="checkboxes">
+<b href="checkboxe" style="text-align: left;text-decoration: none;display:block">
+
+  <form action="/action_page.php">
+    <p>GENDER</p>
+    <input type="radio" id="MALE" name="fav_language" value="MALE">
+    <label for="MALE">MALE</label><br>
+    <input type="radio" id="FEMALE" name="fav_language" value="FEMALE">
+    <label for="FEMALE">FEMALE</label><br>
+  
+
+    <br>  
+  
+    <p>MARITAL STATUS</p>
+    
+    <input type="radio" id="age2" name="age" value="60">
+    <label for="age2">SINGLE</label><br>  
+    <input type="radio" id="age3" name="age" value="100">
+    <label for="age3">MARIED</label><br><br>
+    <input type="radio" id="age3" name="age" value="100">
+    <label for="age3">DIVORCED</label><br><br>
+
+
+<!--- India states -->
+Select a state<br>
+<select id="country-state" name="country-state">
+  <option value="AN">    </option>
+  <option value="AP">Abia State (Umuahia)</option>
+  <option value="AR">Adamawa State (Yola)</option>
+  <option value="AS">Akwa Ibom State (Uyo)</option>
+  <option value="BR">Anambra State (Awka)</option>
+  <option value="CH">Bauchi State (Bauchi)</option>
+  <option value="CT">Bayelsa State (Yenagoa)</option>
+  <option value="DN">Benue State (Makurdi)</option>
+  <option value="DD">Borno State (Maiduguri)</option>
+  <option value="DL">Cross River State (Calabar)</option>
+  <option value="GA">Delta State (Asaba)</option>
+  <option value="GJ">Ebonyi State (Abakaliki)</option>
+  <option value="HR">Edo State (Benin City)</option>
+  <option value="HP">Ekiti State (Ado Ekiti)</option>
+  <option value="JK">Enugu State (Enugu)</option>
+  <option value="JH">Gombe State (Gombe)</option>
+  <option value="KA">Imo State (Owerri)</option>
+  <option value="KL">Jigawa State (Dutse)</option>
+  <option value="LA">Kaduna State (Kaduna)</option>
+  <option value="LD">Kano State (Kano)</option>
+  <option value="MP">Katsina State (Katsina)</option>
+  <option value="MH">Kebbi State (Birnin Kebbi)</option>
+  <option value="MN">Kogi State (Lokoja)</option>
+  <option value="ML">Kwara State (Ilorin)</option>
+  <option value="MZ">Lagos State (Ikeja)</option>
+  <option value="NL">Nasarawa State (Lafia)</option>
+  <option value="OR">Niger State (Minna)</option>
+  <option value="PY">Ogun State (Abeokuta)</option>
+  <option value="PB">Ondo State (Akure)</option>
+  <option value="RJ">Osun State (Oshogbo)</option>
+  <option value="SK">Oyo State (Ibadan)</option>
+  <option value="TN">Plateau State (Jos)</option>
+  <option value="TG">Rivers State (Port Harcourt)</option>
+  <option value="TR">Sokoto State (Sokoto)</option>
+  <option value="UP">Taraba State (Jalingo)</option>
+  <option value="UT">Yobe State (Damaturu)</option>
+  <option value="WB">Zamfara State (Gusau)l</option>
+</select>
+Enrole biometric
+<select id="country-state" name="country-state">
+<br>
+ 
+  </form>
+
+
+</div>
+</form>  
+</dd>                                                                 
+<br/>
+<p></p>
+<p></p>
+
+            </div>
+                         
+                          </div>
+                        </div>
+                        </form>
+                     </div> 
+      <footer class="mastfoot mt-auto">
+        <div class="inner">
+          <!--<p>Cover template for <a href="https://getbootstrap.com/">Bootstrap</a>, by <a href="https://twitter.com/mdo">@mdo</a>.</p>-->
+        </div>
+      </footer>
+    </div>
+
+
+    <!-- Bootstrap core JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <!--<script>window.jQuery || document.write('<script src="{{url_for('static', filename = 'js/jquery-slim.min.js')}}"><\/script>')</script> -->
+    <script src="{{url_for('static', filename = 'js/popper.min.js')}}"></script>
+    <script src="{{url_for('static', filename = 'js/bootstrap.min.js')}}"></script>
+  </body>
+</html>
+
+
+
+
+
+
+<!------
+
+
+1. What is your Age?
+2. What was your age at first menstrual cycle ?
+3. What was your age at last menstrual cycle?
+4. What was your age at first pregnancy.?
+5. What is your duration of breast feeding ?
+6. What is your Body Mass Index ?
+7. Do you have any family member that have had breast cancer?
+8. Have ever been exposed to chest radiation. If Yes, at what age
+9. Do you use birth control drugs?
+10. Did you have any postmenopausal hormone therapy 
+11. Do you take alcohol? If yes what quantity per drink.
+12. Do you smoke
+
+

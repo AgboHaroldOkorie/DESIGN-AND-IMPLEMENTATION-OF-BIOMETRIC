@@ -1,0 +1,162 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link rel="icon" href="../../../../favicon.ico">
+
+    <title>       </title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="{{url_for('static', filename = 'css/bootstrap.min.css')}}" rel="stylesheet">
+
+    <!-- Custom styles for this template -->
+    <link href="{{url_for('static', filename = 'css/cover.css')}}" rel="stylesheet">
+  </head>
+
+
+<style>
+@font-face{
+  font-family:headfont;
+  src:url("ui/fonts/Summer-Vibes-OTF.otf");
+}
+@font-face{
+  font-family:mafont;
+  src:url("ui/fonts/OpenSans-Regular.ttf");
+}
+#wrapper{
+  max-width:900px;
+  min-height:500px;
+  margin:auto;
+  color:grey;
+  font-family: mafont;
+  font-size:13px;
+}
+
+form{
+  margin:auto;
+  padding:10px;
+  width:100%;
+  max-width: 400px;
+}
+input[type=text],input[type=password],input[type=submit]{
+  paddind:10px;
+  margin:10px;
+  width:98%;
+  border-radius: 5px;
+  border:solid 1px grey;
+}
+input[type=submit]{
+  width:100%;
+  cursor:pointer;
+  background-color: #2b5488;
+  color:white;
+}
+input[type=radio]{
+  transform: scale(1.2);
+  cursor:pointer;
+}
+#header{
+  background-color: #485b6c;
+  font-size: 40px;
+  text-align:center;
+  font-family: headfont;
+  width:100%;
+  color:white;
+}
+#error{
+  text-align:center;
+  padding:0.5em;
+  background-color:#ecaf91;
+  color:white;
+  display:none;
+}
+</style>
+<body>
+</style>
+<body>
+<style type="text/css">
+  body{
+    background-image: url('static/index.jpg');
+    background-repeat: no-repeat; 
+    background-size: cover;
+  }
+</style>
+    <div id="wrapper">
+  <div id="header">
+  
+
+
+
+ <!-- <div style="font-size:20px; font-family: mafont"> please Login</div> -->
+</div>
+  <div id="error" style="text-align:left;paddind:0.5em;background-color: #ecaf91;color:white;margin:auto;display:none"></div>
+  <br>
+       
+   <!--<div style="font-size:20px; font-family: mafont"> please Login</div> -->
+      
+    
+</body>
+ 
+
+
+</html>
+
+  <body class="text-center" data-spy="scroll" data-target=".navbar" data-offset="60">
+    <div class="cover-container d-flex h-100 p-3 mx-auto flex-column">
+    
+
+           
+            
+    
+      <main role="main" class="inner cover">
+        <h1 class="cover-heading">  ABOUT THE  </h1>
+        <div class="cover-container d-flex h-100 p-3 mx-auto flex-column">
+      
+        <div class="inner">
+        
+          
+         <a class="nav-link active" href="{{url_for('index')}}">Home</a>
+          <a class="nav-link active" href="{{url_for('About')}}">About the system</a>
+        <p class="lead"> This software provided the resource for an individual to personally examine the breast cancer risk level, 
+showing that the predisposing risk factors can be reduced by personal health monitoring. Though, 
+MFES employed higher number of fuzzy rules unlike the existing systems with less number of 
+rules; it supports pre-tumor growth instead of post-tumor growth which was incapable of handling 
+the high incidence rate. It is therefore recommended that MFES be used to detect predisposing 
+breast cancer risk levels early enough. The main contribution of this work is the reduction of the 
+incidence rate in contrast to the existing methods currently applied in the diagnosis of breast cancer. 
+  </p>
+        
+    
+
+<p class="lead">
+
+The main focus of the project is the implementation of data encryption and decryption on patient’s privacy in E-records.
+Encrypting sensitive data by default using the logged in user’s secret key which is only known by the logged in user.
+Providing a flexible means of changing login password if it is been compromised.
+Providing a flexible means of allowing users to change their secret key, by providing a security question and answer which was provided when they created the account and the old key if key has been compromised.
+Providing  a security emergency  rule called “glass breaking rule” where only the admin staff can use patient id and his own secret key to get patient secret key to enable doctors see patient record. 
+ Finally, to design a system this will help to overcome the problem of stigmatization on patients living with a particular ailment.
+
+ </p>
+  </main>
+      <footer class="mastfoot mt-auto">
+        <div class="inner">
+          <!--<p>Cover template for <a href="https://getbootstrap.com/">Bootstrap</a>, by <a href="https://twitter.com/mdo">@mdo</a>.</p>_-->
+        </div>
+      </footer>
+    </div>
+
+
+    <!-- Bootstrap core JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <!--<script>window.jQuery || document.write('<script src="{{url_for('static', filename = 'js/jquery-slim.min.js')}}"><\/script>')</script> -->
+    <script src="{{url_for('static', filename = 'js/popper.min.js')}}"></script>
+    <script src="{{url_for('static', filename = 'js/bootstrap.min.js')}}"></script>
+  </body>
+</html>
+

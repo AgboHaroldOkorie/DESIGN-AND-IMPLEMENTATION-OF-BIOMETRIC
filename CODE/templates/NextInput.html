@@ -1,0 +1,135 @@
+<!doctype html>
+<html lang="en">
+  <head> 
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link rel="icon" href="../../../../favicon.ico">
+
+
+    <title>        </title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="{{url_for('static', filename = 'css/bootstrap.min.css')}}" rel="stylesheet">
+
+    <!-- Custom styles for this template -->
+    <link href="{{url_for('static', filename = 'css/cover.css')}}" rel="stylesheet">
+  </head>
+
+<style type="text/css">
+  body{
+    background-image: url('static/img/new/NCPNIGERIA.jpg');
+    background-repeat: no-repeat; 
+    background-size: cover;
+  }
+
+</style>
+  <body class="text-center" data-spy="scroll" data-target=".navbar" data-offset="60">
+     <div class="cover-container d-flex h-100 p-3 mx-auto flex-column">
+      <header class="masthead mb-auto">
+        <div class="inner">
+          <h3 class="masthead-brand">  INFORMATION PORTAL </h3>
+          <nav class="nav nav-masthead justify-content-center">
+            <a class="nav-link active" href="{{url_for('index')}}">Home</a>
+            <a class="nav-link active" href="#"></a>
+    <p class="lead"> 
+          </p>
+      </header>
+  <br/>
+        <div class="container">
+         
+                        <form action = "{{url_for('parkPredict')}}" method="POST" class="align-items-center justify-content-center">
+                              
+                            <form>
+
+                              <div class="container">
+                                <form action = "{{url_for('parkPredict')}}" method="POST" class="align-items-center justify-content-center">
+                                  <div>
+                                    <div >
+                                      <h4 style="color:white; text-align: center;">   REGISTRATION  PORTAL  </h4>
+                                    </div>
+                                    <br>
+                                  <div class="form-row">
+                                      <div class="form-group col-md-6">
+                                        <label class="form-group row-md-6 " for="Select" style="font-weight: bold; color: white" >  Name (Surname first) </label>
+                                        <input type="text" step = "any" name = "AAFMC" class="form-control" placeholder=" Name (Surname) " required="">
+                                      </div>
+                                      <div class="form-group col-md-6">
+                                        <label class="form-group row-md-6 " for="Select" style="font-weight: bold; color: white" >  Other Names   </label>
+                                          <input type="text" step = "any" name = "AALMC" class="form-control" placeholder=" Other Names  " required="">
+                                      </div>
+                                    </div>
+                                    <div class="form-row">
+                                      <div class="form-group col-md-6">
+                                      <label class="form-group row-md-6 " for="Select" style="font-weight: bold; color: white" > Date of Birth  </label>
+                                        <input type="text" step = "any" name = "AAFP" class="form-control" placeholder=" DD/MM/YY " required="">
+                                      </div>
+                                      <div class="form-group col-md-6">
+                                        <label class="form-group row-md-6 " for="Select" style="font-weight: bold; color: white"> Permanent Home Address:  </label>
+                                           <input type="text" step = "any" name = "DOBF" class="form-control" placeholder="   " required=""> 
+                                      </div>
+                                      <div class="form-group col-md-6">
+                                        <label class="form-group row-md-6 " for="Select" style="font-weight: bold; color: white"> Occupation  </label>
+                                           <input type="test" step = "any" name = "HIM" class="form-control" placeholder="  " required=""> 
+                                    </div >
+                                    <div class="form-group col-md-6">
+                                        <label class="form-group row-md-6 " for="Select" style="font-weight: bold; color: white"> Number of Females:  </label>
+                                           <input type="number" step = "any" name = "WEIGHT" class="form-control" placeholder="Number of Females " required="">  
+                                      </div>
+                                      <div class="form-group col-md-6">
+                                        <label class="form-group row-md-6 " for="Select" style="font-weight: bold; color: white"> The Total number of individuals </label>
+                                           <input type="number" step = "any" name = "HIM" class="form-control" placeholder=" The Total number of individuals " required=""> 
+                                    </div >
+                                    <div class="form-group col-md-6">
+                                        <label class="form-group row-md-6 " for="Select" style="font-weight: bold; color: white"> Children above 30:  </label>
+                                           <input type="number" step = "any" name = "WEIGHT" class="form-control" placeholder="Number of Females " required="">  
+                                      </div>
+                                      <form action="/action_page.php">
+                                        <p>DISABILITY<br>
+                                        <input type="radio" id="YES" name="fav_language" value="YES">
+                                        <label for="YES">YES</label><br>
+                                        <input type="radio" id="NO" name="fav_language" value="NO">
+                                        <label for="NO">NO</label><br>
+                                      <div class="form-group col-md-6">
+                                        <label class="form-group row-md-6 " for="Select" style="font-weight: bold; color: white"> If Yes, please specify </label>
+                                           <input type="text" step = "any" name = "HIM" class="form-control" placeholder="  " required=""> 
+                                    </div >
+                                      </form>
+                                    </div > 
+</form>  
+    </dd>                                                                 
+<br/>
+<p></p>
+<p></p>
+
+                              </div>
+                           
+                          <div class="form-row">
+                            <div class="form-group col-md-6">
+                              <a href="/parkForm" class="btn btn-lg btn-secondary"> Next Form </a>
+                            </div>
+                            <div class="form-group col-md-6">
+                              <button type="reset" class="btn btn-danger">Clear</button>
+                            </div>
+                          </div>
+                        </div>
+                        </form>
+                     </div> 
+      <footer class="mastfoot mt-auto">
+        <div class="inner">
+          <!--<p>Cover template for <a href="https://getbootstrap.com/">Bootstrap</a>, by <a href="https://twitter.com/mdo">@mdo</a>.</p>-->
+        </div>
+      </footer>
+    </div>
+
+
+    <!-- Bootstrap core JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <!--<script>window.jQuery || document.write('<script src="{{url_for('static', filename = 'js/jquery-slim.min.js')}}"><\/script>')</script> -->
+    <script src="{{url_for('static', filename = 'js/popper.min.js')}}"></script>
+    <script src="{{url_for('static', filename = 'js/bootstrap.min.js')}}"></script>
+  </body>
+</html>
